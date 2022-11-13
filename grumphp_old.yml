@@ -1,0 +1,23 @@
+grumphp:
+    parallel:
+        enabled: false
+    tasks:
+        phpcs:
+#            always_execute: true
+            standard:
+                - vendor/bin/phpcs
+        phpstan:
+#            always_execute: true
+            level: 6
+            configuration: phpstan.neon
+        phpunit:
+            always_execute: true
+        securitychecker_enlightn:
+            run_always: true
+        phpmd:
+            ruleset:
+                - "ruleset.xml"
+            always_execute: true
+
+#  { phpunit: null }
+#    clover_coverage: null, codeception: null, phan: null, phpcpd: null, phpcs: null, phpcsfixer: null, phpmd: null, phpstan: null,

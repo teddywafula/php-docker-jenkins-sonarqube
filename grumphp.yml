@@ -1,0 +1,17 @@
+grumphp:
+    parallel:
+        enabled: false
+    tasks:
+        phpcs:
+            standard: PSR12
+        phpstan:
+            level: 6
+            configuration: phpstan.neon
+        phpunit:
+            always_execute: true
+        securitychecker_enlightn:
+            run_always: true
+        phpmd:
+            ruleset:
+                - "ruleset.xml"
+            whitelist_patterns: [ "src"]

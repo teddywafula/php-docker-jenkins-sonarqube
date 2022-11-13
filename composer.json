@@ -1,0 +1,22 @@
+{
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require-dev": {
+        "phpro/grumphp": "^1.13",
+        "phpunit/phpunit": "^9",
+        "phpunit/php-code-coverage": "^9.2",
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/phpstan": "^1.9",
+        "enlightn/security-checker": "^1.10",
+        "phpmd/phpmd": "^2.13",
+        "sebastian/phpcpd": "^6.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
+    }
+}
