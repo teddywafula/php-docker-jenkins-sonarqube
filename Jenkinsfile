@@ -7,6 +7,7 @@ pipeline {
             steps {
                 git branch: "master", url: "https://github.com/teddywafula/php-docker-jenkins-sonarqube.git", credentialsId: "github"
                 echo 'Cloned'
+                sh env.BRANCH_NAME
             }
         }
 
