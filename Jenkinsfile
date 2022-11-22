@@ -12,11 +12,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                script {
-                    docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock --entrypoint="" --net host')
-                }
                 echo "build 2"
-
             }
         }
 
@@ -31,7 +27,6 @@ pipeline {
                 echo "Deploy"
             }
         }
-
 
     }
 }
